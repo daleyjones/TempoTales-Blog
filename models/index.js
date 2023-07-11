@@ -12,7 +12,7 @@ User.hasMany(Comments, {
   onDelete: 'CASCADE',
 });
 
-Comment.belongsTo(User, {
+Comments.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
