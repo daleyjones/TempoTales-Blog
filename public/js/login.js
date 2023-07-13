@@ -1,8 +1,6 @@
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
-  app.use(express.static(path.join(__dirname, '/public')));
-   
   // Collect values from the login form
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
@@ -34,7 +32,7 @@ const signupFormHandler = async (event) => {
   if (name && email && password) {
     const response = await fetch('/api/users', {
       method: 'POST',
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({ name, email, password, rating: 0 }),
       headers: { 'Content-Type': 'application/json' },
     });
 

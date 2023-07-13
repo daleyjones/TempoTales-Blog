@@ -23,14 +23,14 @@
     </form>
   </div>
 
-  {{#if blogPosts.length}}
+  {{#if Posts.length}}
   <div class="col-md-6 post-list">
     <h3>Recent Blog Posts:</h3>
 
-    {{#each blogPosts as |post|}}
+    {{#each Posts as |post|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+        <a href="./post/{{post.id}}">{{post.title}}</a>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
