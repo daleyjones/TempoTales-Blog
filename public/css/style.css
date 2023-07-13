@@ -7,13 +7,13 @@ header, .project:not(:last-child) {
 /* login page */
 
 body {
-  background: #000046;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  /* background: #134E5E;  
-background: -webkit-linear-gradient(to right, #71B280, #134E5E);  
-background: linear-gradient(to right, #71B280, #134E5E);  */
+  background: #36D1DC; 
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
+background: linear-gradient(to right, #5B86E5, #36D1DC);
+  /* background: #000046; 
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  
+background: linear-gradient(to right, #1CB5E0, #000046);  */
 }
 
 header.header {
@@ -52,7 +52,7 @@ div.col-md-6 {
 div.col-md-6{
   transform: scale(0.98);
   border-radius: 20px;
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+  box-shadow: 0px 0px 30px 1px rgb(44 154 223 / 30%);
 }
 
 h2 {
