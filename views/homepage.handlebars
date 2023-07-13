@@ -1,11 +1,11 @@
 
-{{#each blogPosts}}
+{{#each Posts as |post|}}
 <div class="row mb-4 post">
   <div class="col-md-5">
     <h2>
-      <a href="/post/{{id}}">{{title}}</a>
+      <a href="/post/{{post.id}}">{{post.title}}</a>
     </h2>
-    <p class="metadata">Published on {{format_date published_date}} by {{author}}</p>
+    <p class="metadata">Published on {{format_date post.date_created}} by {{user.name}}</p>
   </div>
   <div class="col-md-7">
     <p>
