@@ -17,11 +17,9 @@ document
 
     const data = await response.json();
 
-    // Display the response message to the user
     alert(data.message);
 
-    // Optionally, you can redirect the user to a new page after successful signup
     if (response.ok) {
-      window.location.replace('/dashboard'); // Replace '/dashboard' with the desired page URL
+      window.location.replace('/dashboard');
     }
   });

@@ -7,36 +7,21 @@ const newFormHandler = async (event) => {
   if (title && body) {
     const response = await fetch(`/api/projects`, {
       method: 'POST',
-      body: JSON.stringify({
-        title,
-        body,
-      }),
+      body: JSON.stringify({ title, body }),
       headers: {
         'Content-Type': 'application/json',
       },
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      const blog = { title, body };
+      const blogs = JSON.parse(localStorage.getItem('blogs')) || [];
+      blogs.push(blog);
+      localStorage.setItem('blogs', JSON.stringify(blogs));
+
+      document.location.reload();
     } else {
-      alert('Failed to create post');
-    }
-  }
-};
-
-const delButtonHandler = async (event) => {
-  event.preventDefault();
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
-
-    const response = await fetch(`/api/projects/${id}`, {
-      method: 'DELETE',
-    });
-
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to delete post');
+      alert('Failed to create blog');
     }
   }
 };
@@ -44,7 +29,3 @@ const delButtonHandler = async (event) => {
 document
   .querySelector('.new-post-form')
   .addEventListener('submit', newFormHandler);
-
-document
-  .querySelector('.post-list')
-  .addEventListener('click', delButtonHandler);
