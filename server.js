@@ -1,5 +1,3 @@
-// server.js or app.js (your main server file)
-
 const express = require('express');
 const path = require('path');
 const session = require('express-session');
@@ -13,16 +11,12 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 
-const sess = {
-  // Your session configuration here...
-};
+const sess = {};
 
 app.use(session(sess));
 
-// Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
@@ -30,10 +24,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Your other routes
 app.use(routes);
 
-// Signup route
 app.post('/signup', async (req, res) => {
   try {
     const { name, email, password } = req.body;
