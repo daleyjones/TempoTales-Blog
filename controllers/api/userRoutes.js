@@ -41,6 +41,7 @@ router.post('/login', async (req, res) => {
       req.session.logged_in = true;
 
       res.json({ user: userData, message: 'You are now logged in!' });
+      console.log(req.session);
     });
   } catch (err) {
     res.status(400).json(err);
@@ -48,6 +49,7 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/logout', (req, res) => {
+  console.log(req.session);
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).redirect('/login'); // Redirect to the login page
