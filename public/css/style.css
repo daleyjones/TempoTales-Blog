@@ -392,64 +392,6 @@ textarea.form-input {
   margin-right: 10px;
 }
 
-/* CSS for Comment Card */
-.comment.card {
-  width: 400px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* CSS for Card Header */
-.card-header {
-  margin-bottom: 20px;
-}
-
-.card-header h2 {
-  font-size: 18px;
-  margin: 0;
-}
-
-/* CSS for Edit Comment Form */
-#edit-comment-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.form-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-textarea.form-input {
-  height: 150px;
-}
-
-.btn {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
-#delete-btn {
-  background-color: #dc3545;
-  margin-right: 10px;
-}
 
 
 @keyframes color-change {
