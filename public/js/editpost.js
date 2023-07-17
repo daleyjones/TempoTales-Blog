@@ -6,6 +6,7 @@ const editFormHandler = async function (event) {
   const body = document.querySelector('textarea[name="post-body"]').value;
 
   await fetch(`/api/editPRoutes/${postId}`, {
+  await fetch(`/api/projectsRoutes/${postId}`, {
     method: 'PUT',
     body: JSON.stringify({
       title,
