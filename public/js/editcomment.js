@@ -5,7 +5,7 @@ const editFormHandler = async function(event) {
 
   const body = document.querySelector('textarea[name="comment-body"]').value;
 
-  await fetch(`/api/comment/${commentId}`, {
+  await fetch(`/api/projectRoutes/${commentId}`, {
     method: 'PUT',
     body: JSON.stringify({
       body
@@ -19,7 +19,7 @@ const editFormHandler = async function(event) {
 };
 
 const deleteClickHandler = async function() {
-  await fetch(`/api/comment/${commentId}`, {
+  await fetch(`/api/projectRoutes/${commentId}`, {
     method: 'DELETE'
   });
 
