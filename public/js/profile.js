@@ -26,6 +26,7 @@ const newFormHandler = async (event) => {
 
 const delButtonHandler = async (event) => {
   event.preventDefault();
+  console.log(event.target);
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
