@@ -24,6 +24,29 @@ const newFormHandler = async (event) => {
   }
 };
 
+const commentFormHandler = async (event) => {
+  event.preventDefault();
+
+  const body = document.querySelector('#comment-content').value.trim();
+  console.log(body);
+
+  if (body) {
+    const response = await fetch(`/api/projects/comment`, {
+      method: 'POST',
+      body: JSON.stringify({ comment }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (response.ok) {
+      document.location.replace('/profile');
+    } else {
+      alert('Failed to create post');
+    }
+  }
+};
+
 const delButtonHandler = async (event) => {
   event.preventDefault();
   console.log(event.target);
@@ -49,3 +72,6 @@ document
 document
   .querySelector('.post-list')
   .addEventListener('click', delButtonHandler);
+document
+  .querySelector('#comment-post-form')
+  .addEventListener('submit', commentFormHandler);
