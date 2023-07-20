@@ -77,7 +77,7 @@ div.col-md-6 {
 }
 
 div.col-md-6{
-  transform: scale(0.98);
+  transform: scale(0.95);
   border-radius: 20px;
   box-shadow: 0px 0px 30px 1px rgba(223, 44, 44, 0.3);
 }
@@ -213,6 +213,19 @@ textarea#post-content.input-form {
   /* border: 1px solid rgb(219, 213, 213); */
 }
 
+textarea#comment-content.input-form {
+  border-radius: 8px;
+  height: 160px;
+  width: 45rem;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  /* background: linear-gradient(to right ,#4b53ed,rgb(75, 142, 250)); */
+  background-color: #f9f6f6b5;
+  box-shadow: 2px 2px 12px inset hsla(0, 0%, 0%, 0.268);
+  /* border: 1px solid rgb(219, 213, 213); */
+}
+
 button.btn-primary {
   align-self: flex-end;
   padding: 8px;
@@ -227,11 +240,23 @@ button.btn-primary {
   margin-right: 185px;
 }
 
-/* profile post list */
+button.btn-primary:hover {
+  background-color: rgb(51, 137, 173);
+  transform: translateY(-0.20em);
 
+}
+
+/* profile post list */
+body.bg {
+  background: #F0F2F0; 
+  background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  
+  background: linear-gradient(to right, #000C40, #F0F2F0); 
+
+}
 
 h2.welcome {
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
+  color: white;
   font-size: 30px;
   margin-top: -25px;
 }
@@ -365,10 +390,12 @@ h2.welcome{
   animation: color-change 1s 1s ;
 }
 
+
 /*  */
 .row {
   margin-bottom: 20px;
 }
+
 
 
 .post-card {
@@ -453,6 +480,7 @@ h2.welcome{
   }
 }
 
+
 /* Styling for carousel items */
 
 /* Styling for carousel items */
@@ -499,6 +527,7 @@ h2.welcome{
 .carousel-control-next:hover {
   background-color: rgba(234, 4, 4, 0.8);
 }
+
 
 
 
