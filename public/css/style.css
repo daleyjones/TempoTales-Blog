@@ -1,8 +1,4 @@
-/* header, .project:not(:last-child) {
-  /* border-bottom: 1px solid #ccc; */
-  /* box-shadow: 15px 15px 30px var(--smokey),
-  -15px -15px 30px #ffffff;
-/* } */ 
+
 
 
 /* login page */
@@ -137,10 +133,17 @@ form .form-input {
 }
 
 footer.footer{
-  display: flex;
+ 
+  color:white;
   justify-content: center;
-  padding: 2rem;
-  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the height of your footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
 /* profile page */
@@ -388,6 +391,11 @@ h2.welcome{
 }
 
 
+/*  */
+.row {
+  margin-bottom: 20px;
+}
+
 
 
 .post-card {
@@ -471,6 +479,57 @@ h2.welcome{
     transform: rotate(360deg);
   }
 }
+
+
+/* Styling for carousel items */
+
+/* Styling for carousel items */
+.carousel-item {
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item .post-card {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.carousel-item .post-image img {
+  width: 100%;
+  height: auto;
+
+}
+
+/* Styling for carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+ 
+  background-color: rgba(11, 10, 10, 0.5);
+  border-radius: 50%;
+  border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+  color:white;
+  font-size: 24px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(234, 4, 4, 0.8);
+}
+
+
+
 
 
 
