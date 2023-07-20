@@ -210,6 +210,19 @@ textarea#post-content.input-form {
   /* border: 1px solid rgb(219, 213, 213); */
 }
 
+textarea#comment-content.input-form {
+  border-radius: 8px;
+  height: 160px;
+  width: 45rem;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  /* background: linear-gradient(to right ,#4b53ed,rgb(75, 142, 250)); */
+  background-color: #f9f6f6b5;
+  box-shadow: 2px 2px 12px inset hsla(0, 0%, 0%, 0.268);
+  /* border: 1px solid rgb(219, 213, 213); */
+}
+
 button.btn-primary {
   align-self: flex-end;
   padding: 8px;

@@ -1,6 +1,6 @@
 const commentId = document.querySelector('input[name="comment-id"]').value;
 
-const editFormHandler = async function(event) {
+const editFormHandler = async function (event) {
   event.preventDefault();
 
   const body = document.querySelector('textarea[name="comment-body"]').value;
@@ -12,22 +12,21 @@ const editFormHandler = async function(event) {
 >>>>>>> 680b8cb43d43ed4a55792ddf0a912d6123b52ee6
     method: 'PUT',
     body: JSON.stringify({
-      body
+      body,
     }),
     headers: {
-      'Content-Type': 'application/json'
-    }
+      'Content-Type': 'application/json',
+    },
   });
 
   document.location.replace('/profile');
 };
 
-const deleteClickHandler = async function() {
+const deleteClickHandler = async function () {
 <<<<<<< HEAD
   await fetch(`/api/comment/${commentId}`, {
 =======
   await fetch(`/api/projectRoutes/${commentId}`, {
->>>>>>> 680b8cb43d43ed4a55792ddf0a912d6123b52ee6
     method: 'DELETE'
   });
 
