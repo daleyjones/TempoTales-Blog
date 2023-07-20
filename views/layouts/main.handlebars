@@ -15,6 +15,7 @@
       <span role="img" aria-label="music">🎵</span>
       <a href="/" class="title">TempoTales</a>
     </h1>
+
     <nav class="nav">
     <ul>
       <li class="li-inline nav-item"><a href="/">Home</a></li>
@@ -23,10 +24,17 @@
       <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
     </ul>
   </nav>
+
+    {{#if logged_in}}
+      <a href="/profile">Profile</a>
+      <button class="btn btn-logout" id="logout">Logout</button>
+  {{else}}
+      <a href="/login">Login</a>
+  {{/if}}
+
   </header>
   <main class="main">
     <div class="container">
-      <!-- Render the sub layout -->
       {{{ body }}}
     </div>
   </main>
@@ -34,5 +42,5 @@
     <p>&copy; 2023 TempoTales. All rights reserved.</p>
   </footer>
 </body>
-
+<script src='./js/logout.js'></script>
 </html>
