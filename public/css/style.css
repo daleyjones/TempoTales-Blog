@@ -50,7 +50,7 @@ div.col-md-6 {
 }
 
 div.col-md-6{
-  transform: scale(0.98);
+  transform: scale(0.95);
   border-radius: 20px;
   box-shadow: 0px 0px 30px 1px rgb(44 154 223 / 30%);
 }
@@ -193,11 +193,23 @@ button.btn-primary {
   margin-right: 185px;
 }
 
-/* profile post list */
+button.btn-primary:hover {
+  background-color: rgb(51, 137, 173);
+  transform: translateY(-0.20em);
 
+}
+
+/* profile post list */
+body.bg {
+  background: #F0F2F0; 
+  background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  
+  background: linear-gradient(to right, #000C40, #F0F2F0); 
+
+}
 
 h2.welcome {
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
+  color: white;
   font-size: 30px;
   margin-top: -25px;
 }
@@ -346,4 +358,6 @@ h2.welcome{
     transform: scaleX(1);
   }
 }
+
+
 
