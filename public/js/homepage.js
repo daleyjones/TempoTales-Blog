@@ -1,5 +1,5 @@
 // Authorization token that must have been created previously.
-const token = 'BQBAzlX9uRMIfPNqUMoU5039xRMl-AcIkyqMWShgV6dghHPFKqHF5XyMkpIG61ZRRNCMElb5YNV3eTbkEerIvy4lmhSY-lYFSUeKhqh05WBTALLLK0HRKmEyWidKvxBHTPcgD5URHs9WhJewO52YQcjCJqoJhU4ke4dQKE_JoaUejWylze-G3a15LfAsCDNcnb1JP-nMVfleEixCmTdGeHzh8uqMp1jmTPyCxI9qKEqHnymnTLgYDZ7hpQtqfX2Rn1nVRA';
+const token = 'BQCzp7MWL6Yj0OZdjMUkl-sNS8yfjxgS9yoToOxpsIDOOPQIGgQA3-a0p7dglPPLLEUTuMbW7ehRCXNqPK0KxPnNQOhmc1dTElQwhq0QLLXWSNOY8YvB75nNXmmsMlZWYSkTn8g3VorIi5nKy_fzT9kVlWr7a0vBoTyfR3wQRkn7ZeVK3IoLFW8BPusRYVePU_Rqfma68Srv8f0U7Vh0Vv34szfhO65CwtrcVYCSxW5dlGpJDrbp68FSejJbhL4_fwYP_A';
 // Function to make API requests
 async function fetchWebApi(endpoint, method, body) {
   const res = await fetch(`https://api.spotify.com/${endpoint}`, {
@@ -241,7 +241,7 @@ const musicArticle3 = {
 };
 
 const hipHopArticles = [
-  // Other articles you already had...
+ 
   {
     title: "Dr. Dre: The Iconic Producer and Hip-Hop Visionary Who Shaped a Genre",
     content: `In the vast landscape of hip-hop, few figures loom as large as Dr. Dre. As a pioneer, producer, rapper, and visionary, he has left an indelible mark on the music industry, transforming hip-hop into a global cultural phenomenon. From his early days as a member of N.W.A. to his groundbreaking solo work and trailblazing ventures, Dr. Dre's influence and legacy are immeasurable.
@@ -306,6 +306,76 @@ document.addEventListener("DOMContentLoaded", async function () {
   const createdPlaylist = await createPlaylist(tracksUri);
   displayEmbeddedPlaylist(createdPlaylist.id);
 });
+
+// Replace 'YOUR_OPENAI_API_KEY' with your actual OpenAI API key
+const apiKey = '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';
+
+// Function to send a message to the chatbot and receive a response
+async function sendMessageToChatbot(message) {
+  try {
+    const response = await fetch('/api/chatbot', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ message, apiKey }),
+    });
+
+    const data = await response.json();
+    displayChatbotMessage(data.reply);
+  } catch (error) {
+    console.error(error);
+    displayChatbotMessage("Oops! Something went wrong.");
+  }
+}
+
+// Function to display a message from the chatbot
+function displayChatbotMessage(message) {
+  const chatbotMessagesDiv = document.getElementById('chatbot-messages');
+  const messageDiv = document.createElement('div');
+  messageDiv.className = 'message';
+  messageDiv.textContent = message;
+  chatbotMessagesDiv.appendChild(messageDiv);
+  chatbotMessagesDiv.scrollTop = chatbotMessagesDiv.scrollHeight;
+}
+
+// Function to handle user input and send it to the chatbot
+document.getElementById('user-input').addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
+    const userInput = event.target.value.trim();
+    if (userInput) {
+      displayChatbotMessage(`You: ${userInput}`);
+      event.target.value = '';
+      sendMessageToChatbot(userInput);
+    }
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Replace YOUR_YOUTUBE_API_KEY with your actual YouTube API key
 const youtubeAPIKey = "YAIzaSyCY8ADsA7nL-sYx0-70daCqWOhHfJ4jfnY";
