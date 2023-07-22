@@ -4,6 +4,26 @@
     <title>Music Updates</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
+
+<body class="hp">
+    <!-- Your existing carousel code -->
+    <div id="carouselNew" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            {{#each Posts as |post index|}}
+            <div class="carousel-item{{#unless index}} active{{/unless}}">
+                <div class="row mb-4 post">
+                    <div class="col-md-12">
+                        <div class="post-card">
+                            <div class="post-image">
+                                <img src="{{post.image_url}}" alt="{{post.title}}">
+                            </div>
+                            <div class="post-content">
+                                <h2><a href="/post/{{post.id}}" class="post-title">{{post.title}}</a></h2>
+                                <p class="metadata">Published on {{format_date post.date_created}} by {{user.name}}</p>
+                                <p class="post-excerpt">{{post.excerpt}}</p>
+                            </div>
+                            <span><a href="/post/{{post.id}}" class="cover">Click me to see post</a></span>
+
 <body>
 
 <div id="carouselNew" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -20,6 +40,7 @@
                             <h2><a href="/post/{{post.id}}" class="post-title">{{post.title}}</a></h2>
                             <p class="metadata">Published on {{format_date post.date_created}} by {{user.name}}</p>
                             <p class="post-excerpt">{{post.excerpt}}</p>
+
                         </div>
                     </div>
                 </div>
@@ -42,6 +63,10 @@
     <!-- Music Updates -->
     <h1>Top 5 Music Tracks</h1>
     <div id="top-tracks"></div>
+
+
+    {{!-- <button id="logout">Logout here!</button> --}}
+=======
 
 
      <h1>Recommended Music Tracks</h1>
