@@ -1,5 +1,5 @@
 // Authorization token that must have been created previously.
-const token = 'BQAWQqZ_dgeeMQAdVd1x-ewyRrvJB7zE-w1pb4Iy54piFLuJ2uqiVR-_3FewamMhSh4Nmxs-FxcHjgtYlJ7aQXEE1y7x7bG_jsUCfHL5x3ElENYOKToPXtLH6Jx4sRfDtMS9Gd7vWObwLHOZuMI0WQ9BRd66UmQQZwxwmLdoPApjCWLeQrhY_pJXHPIffaS_T3d2NcPrAIn-3fzDFuXV4ghxN0C_yaE9ttdDralEvIQyqTcN83mQWdRs5WxbtiYhbMWx_g';
+const token = 'BQB5epFbWMMoUSa0BrPlMZX-FEORkKnQHZ07Nj6sLvNoCk6DCwZ2hRCDIa2vKZgUCSEzNJg5nBOpTKryLm2W17Ob26WeQdS1LvGjG5oRGcvcUJaFHcy4eLOgaSGL4Dr4A9LLg5LG0S-gc_cravugRbR1YGrMvdL-ohEy7uA0DhMqAF-Y6vC4seidKHnWepZ12yUY4xsLIP-zOe7hEzc_lNe82ohLNsfBe0YkIIwoP9gSyR9uyqu4GuhD_zh_x7-Y979V4A';
 
 // Function to make API requests
 async function fetchWebApi(endpoint, method, body) {
