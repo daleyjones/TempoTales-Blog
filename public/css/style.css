@@ -634,7 +634,13 @@ h2 {
 
 
 
-
+/* Add a border and adjust image size */
+.article-image {
+  max-width: 500px; /* Adjust the width to your desired size */
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 
 
