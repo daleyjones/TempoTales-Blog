@@ -31,13 +31,20 @@ router.get('/', withAuth, async (req, res) => {
 router.get('/post/:id', withAuth, async (req, res) => {
   console.log(req.params.id);
   try {
-    const postData = await Post.findByPk(req.params.id);
-
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
     const post = postData.get({ plain: true });
-
+    console.log(post);
     res.render('post', {
       ...post,
       logged_in: req.session.logged_in,
+      user_id: req.session.user_id,
     });
   } catch (err) {
     res.status(500).json(err);

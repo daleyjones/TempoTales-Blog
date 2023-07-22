@@ -19,4 +19,11 @@ module.exports = {
       return `<span for="img" aria-label="gear">⚙️</span>`;
     }
   },
+  isUserBlog(postUserId, userId) {
+    return postUserId === userId;
+  },
+
+  convertId(id) {
+    id === user.name;
+  },
 };
