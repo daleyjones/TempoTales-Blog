@@ -1,7 +1,7 @@
 <div class="text-center">
   <h2>{{title}}</h2>
   <p>{{body}}</p>
-  <p>Created by {{users.name}} on {{format_date date_created}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
 
   {{#if (isUserBlog user_id logged_in_user_id)}}
     <a href="/post/edit/{{id}}">Edit</a>
