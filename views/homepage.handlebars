@@ -4,7 +4,7 @@
     <title>Music Updates</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
-<body>
+<body class="hp">
     <!-- Your existing carousel code -->
     <div id="carouselNew" class="carousel slide" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner">
@@ -21,6 +21,7 @@
                                 <p class="metadata">Published on {{format_date post.date_created}} by {{user.name}}</p>
                                 <p class="post-excerpt">{{post.excerpt}}</p>
                             </div>
+                            <span><a href="/post/{{post.id}}" class="cover">Click me to see post</a></span>
                         </div>
                     </div>
                 </div>
@@ -43,7 +44,7 @@
     <div id="music-updates"></div>
     <div id ="music-updates"></div>
 
-    <button id="logout">Logout here!</button>
+    {{!-- <button id="logout">Logout here!</button> --}}
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
