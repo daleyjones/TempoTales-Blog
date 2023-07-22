@@ -13,9 +13,9 @@
                 <div class="row mb-4 post">
                     <div class="col-md-12">
                         <div class="post-card">
-                            <div class="post-image">
+                            {{!-- <div class="post-image">
                                 <img src="{{post.image_url}}" alt="{{post.title}}">
-                            </div>
+                            </div> --}}
                             <div class="post-content">
                                 <h2><a href="/post/{{post.id}}" class="post-title">{{post.title}}</a></h2>
                                 <p class="metadata">Published on {{format_date post.date_created}} by {{user.name}}</p>
@@ -41,8 +41,6 @@
     <!-- Music Updates -->
     <h1>Top 5 Music Tracks</h1>
     <div id="top-tracks"></div>
-
-    <button id="logout">Logout here!</button>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
