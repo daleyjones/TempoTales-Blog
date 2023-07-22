@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
+<<<<<<< HEAD
 
 <div id="carouselNew" class="carousel slide" data-ride="carousel" data-interval="3000">
     <div class="carousel-inner">
@@ -20,6 +21,24 @@
                             <h2><a href="/post/{{post.id}}" class="post-title">{{post.title}}</a></h2>
                             <p class="metadata">Published on {{format_date post.date_created}} by {{user.name}}</p>
                             <p class="post-excerpt">{{post.excerpt}}</p>
+=======
+    <!-- Your existing carousel code -->
+    <div id="carouselNew" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            {{#each Posts as |post index|}}
+            <div class="carousel-item{{#unless index}} active{{/unless}}">
+                <div class="row mb-4 post">
+                    <div class="col-md-12">
+                        <div class="post-card">
+                            {{!-- <div class="post-image">
+                                <img src="{{post.image_url}}" alt="{{post.title}}">
+                            </div> --}}
+                            <div class="post-content">
+                                <h2><a href="/post/{{post.id}}" class="post-title">{{post.title}}</a></h2>
+                                <p class="metadata">Published on {{format_date post.date_created}} by {{user.name}}</p>
+                                <p class="post-excerpt">{{post.excerpt}}</p>
+                            </div>
+>>>>>>> 95ea1d2ebe506959f65fa506360c04d8ee848f8f
                         </div>
                     </div>
                 </div>
@@ -43,6 +62,7 @@
     <h1>Top 5 Music Tracks</h1>
     <div id="top-tracks"></div>
 
+<<<<<<< HEAD
      <h1>Recommended Music Tracks</h1>
    <div id="recommended-tracks" class="recommended-tracks-container"></div>
 
@@ -56,6 +76,8 @@
 
 
  
+=======
+>>>>>>> 95ea1d2ebe506959f65fa506360c04d8ee848f8f
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
