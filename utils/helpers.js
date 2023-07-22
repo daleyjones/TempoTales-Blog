@@ -22,4 +22,8 @@ module.exports = {
   isUserBlog(postUserId, userId) {
     return postUserId === userId;
   },
+
+  convertId(id) {
+    id === user.name;
+  },
 };
