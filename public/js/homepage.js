@@ -306,3 +306,31 @@ document.addEventListener("DOMContentLoaded", async function () {
   const createdPlaylist = await createPlaylist(tracksUri);
   displayEmbeddedPlaylist(createdPlaylist.id);
 });
+
+// Replace YOUR_YOUTUBE_API_KEY with your actual YouTube API key
+const youtubeAPIKey = "YAIzaSyCY8ADsA7nL-sYx0-70daCqWOhHfJ4jfnY";
+let youtubePlayer;
+
+// Function to create the YouTube player
+function createYouTubePlayer() {
+  youtubePlayer = new YT.Player("youtube-player-container", {
+    height: "360",
+    width: "640",
+    videoId: "6vgqRjH4Pmw", // Replace VIDEO_ID with the YouTube video ID you want to display
+  });
+}
+
+// Load YouTube API asynchronously
+function loadYouTubeAPI() {
+  const tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  const firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+
+// Initialize YouTube player when the API is ready
+function onYouTubeIframeAPIReady() {
+  createYouTubePlayer();
+}
+
+loadYouTubeAPI();

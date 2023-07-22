@@ -26,6 +26,7 @@ header,
   
 
 body {
+  
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -131,20 +132,20 @@ form .form-input {
   background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
   color: rgb(0, 255, 200);
 }
-/* 
-footer.footer{
+
+/* footer.footer{
  
   color:white;
   justify-content: center;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Set the height of your footer */
+  height: 60px; 
   display: flex;
   align-items: center;
   justify-content: center;
  
-/* } */ */
+}  */
 
 /* profile page */
 
@@ -251,6 +252,7 @@ body.bg {
   background: #F0F2F0; 
   background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  
   background: linear-gradient(to right, #000C40, #F0F2F0); 
+  
 
 }
 
@@ -642,15 +644,19 @@ h2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Optional CSS styling for the YouTube video player container */
+#youtube-player-container {
+  margin: 20px auto;
+}
 
 
 
 
-/* .footer {
+ /* .footer {
   background-color: #f0f0f0;
   padding: 10px;
   text-align: center;
   position: absolute;
   bottom: 0;
   width: 100%;
-} */
+}  */
