@@ -158,8 +158,13 @@ footer.footer{
   position: absolute;
   bottom: 0;
   width: 100%;
+
   height: 60px; 
   display: flex;
+
+  height: 60px; /* Set the height of your footer */
+  /* display: flex;
+
   align-items: center;
   justify-content: center;
  
@@ -822,10 +827,19 @@ h1 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Add margin between the two containers */
 .top-tracks-container {
   margin-right: 15px;
 }
+
+/* h2 {
+  margin-bottom: 10px;
+  color: #f30a39;
+  font-size: 24px;
+  background-color: rgb(241, 240, 239);
+} */
+
 
 /* Adjust for the flexbox layout */
 .recommended-tracks-container {
@@ -887,7 +901,14 @@ h1 {
   color: #0056b3;
 }
 
-=======
+
+
+
+
+
+
+
+
 /* Add this CSS to your existing styles */
 /*daley */
 
@@ -1050,5 +1071,16 @@ footer.footer{
   justify-content: center;
  
 }
+
+
+
+/* .footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
 
 
