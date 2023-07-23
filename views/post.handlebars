@@ -1,10 +1,10 @@
 <body class="post">
 <div class="text-center">
 
-  <h2 class="hpost">{{title}}</h2>
+    <h2 class="hpost">{{title}}</h2>
   <p class="text">{{body}}</p>
   <p class="created">Created by {{user.name}} on {{format_date date_created}}</p>
-  <hr>
+  
   <div class="row mt-5">
   <div class="col-md-7">
     <form class="new-post-form" id="comment-post-form">
@@ -20,9 +20,7 @@
   </body>
 
 
-  <h2>{{title}}</h2>
-  <p>{{body}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+ 
 
   {{#if (isUserBlog user_id logged_in_user_id)}}
     <a href="/post/edit/{{id}}">Edit</a>
