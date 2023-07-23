@@ -38,17 +38,32 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+
+
     <!-- Add this div where you want the YouTube video to appear -->
-    <div id="youtube-player-container"></div>
-    <!-- Music Updates -->
+    <div class="tracks-container">
+  <div class="top-tracks">
     <h1>Top 5 Music Tracks</h1>
-    <div id="top-tracks"></div>
-
+    <div id="top-tracks" class="tracks"></div>
+  </div>
+  <div class="recommended-tracks">
     <h1>Recommended Music Tracks</h1>
-    <div id="recommended-tracks" class="recommended-tracks-container"></div>
+    <div id="recommended-tracks" class="tracks"></div>
+  </div>
+</div>
 
+<div class="songsNow">
+  <div class="left-column">
     <h1>Listen to songs right now</h1>
-    <div id="playlist-container" style="min-height: 360px;"></div>
+    <div id="playlist-container" class="playlist-container" style="min-height: 360px;"></div>
+  </div>
+  <div class="right-column">
+    <h1>Music Podcast</h1>
+    <div id="youtube-player-container"></div>
+  </div>
+</div>
+
 
     <div id="music-articles">
         <h1>Music Articles</h1>

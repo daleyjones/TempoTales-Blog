@@ -794,40 +794,57 @@ p.created {
   height: 400px; /* Adjust the height as per your requirement */
 }
 
-/* Style for the top tracks */
-.top-tracks {
-  background-color: rgb(21, 33, 202);
-  padding: 20px;
-  border-radius: 5px;
-  color: black;
+
+/* Common style for both containers */
+/* Common style for both containers */
+h1 {
+  font-size: 28px;
+  color: #1d1b1b;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-/* Style for the live API tracks */
-aside {
-  background-color: rgb(3, 142, 241);
-  padding: 20px;
-  border-radius: 5px;
-  color: black;
-}
-
-h2 {
-  margin-bottom: 10px;
-  color: #f30a39;
-  font-size: 24px;
-  background-color: rgb(241, 240, 239);
-}
-
-#live-tracks {
+.tracks-container {
   display: flex;
-  flex-direction: column;
-  color: red;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 60px auto 0; /* Add margin-top of 30px, remove the auto from top and add 0 to bottom */
+}
+
+.top-tracks-container,
+.recommended-tracks-container {
+  flex: 1;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add margin between the two containers */
+.top-tracks-container {
+  margin-right: 15px;
+}
+
+/* Adjust for the flexbox layout */
+.recommended-tracks-container {
+  margin-left: 15px;
 }
 
 .track {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  color: rgb(238, 233, 233);
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.track:hover {
+  background-color: #ececec;
 }
 
 .track .rank {
@@ -844,42 +861,31 @@ h2 {
 }
 
 .track .info {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
 }
 
 .track .info h3 {
-  margin: 0;
   font-size: 16px;
+  margin: 0;
   font-weight: bold;
 }
 
 .track .info p {
+  font-size: 14px;
+  color: #333;
   margin: 0;
-  color: rgb(10, 58, 231);
 }
 
-.recommended-tracks-container {
-  background-color: #f1f1f1;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-top: 20px;
+.track .info a {
+  color: #ff0048;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
 }
 
-/* Add any additional styles you want for the recommended tracks */
-.track {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
+.track .info a:hover {
+  color: #0056b3;
 }
-
-.track:last-child {
-  border-bottom: none; /* Remove bottom border for the last track */
-}
-
-
-
 
 =======
 /* Add this CSS to your existing styles */
@@ -955,8 +961,78 @@ h2 {
   margin-top: 10px;
   font-size: 16px;
 }
+.songsNow {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.left-column h1 {
+  font-size: 28px;
+  color: #1d1b1b;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.playlist-container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  min-height: 360px;
+}
+
+.left-column {
+  margin-right: 15px;
+}
 
 
+.songsNow {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.left-column {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.left-column h1 {
+  font-size: 28px;
+  color: #1d1b1b;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.playlist-container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  min-height: 360px;
+}
+
+.right-column {
+  flex: 1;
+}
+
+.right-column h1 {
+  font-size: 28px;
+  color: #1d1b1b;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
 
 
 
