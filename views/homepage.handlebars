@@ -21,6 +21,7 @@
                                 <h2><a href="/post/{{post.id}}" class="post-title">{{post.title}}</a></h2>
                                 <p class="metadata">Published on {{format_date post.date_created}} by {{user.name}}</p>
                                 <p class="post-excerpt">{{post.excerpt}}</p>
+                                <span><a href="/post/{{post.id}}" class="cover">Click me to see post</a></span>
                             </div>
                         </div>
                     </div>
@@ -44,29 +45,34 @@
     <!-- Add this div where you want the YouTube video to appear -->
     <div class="tracks-container">
   <div class="top-tracks">
-    <h1>Top 5 Music Tracks</h1>
+    <hr class="hr">
+    <h1 class="top5">Top 5 Music Tracks</h1>
+      <hr class="hr">
     <div id="top-tracks" class="tracks"></div>
   </div>
   <div class="recommended-tracks">
-    <h1>Recommended Music Tracks</h1>
+    <hr class="hr">
+    <h1 class="recom">Recommended Music Tracks</h1>
+      <hr class="hr">
     <div id="recommended-tracks" class="tracks"></div>
   </div>
 </div>
 
 <div class="songsNow">
   <div class="left-column">
-    <h1>Listen to songs right now</h1>
+    <h1 class="listen">Listen to songs right now</h1>
     <div id="playlist-container" class="playlist-container" style="min-height: 360px;"></div>
   </div>
   <div class="right-column">
-    <h1>Music Podcast</h1>
+    <h1 class="pod">Music Podcast</h1>
     <div id="youtube-player-container"></div>
   </div>
 </div>
 
 
     <div id="music-articles">
-        <h1>Music Articles</h1>
+        <hr class="line">
+        <h1 class="articles">Music Articles</h1>
         <div id="article-container" class="article-container"></div>
     </div>
     <div id="hip-hop-articles"></div>

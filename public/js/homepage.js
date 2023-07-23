@@ -124,10 +124,11 @@ function displayEmbeddedPlaylist(playlistId) {
 function displayMusicArticle(article) {
     const articleContainer = document.getElementById("article-container");
     let articleHTML = `
+    <h2 class="article-title">${article.title}</h2>
         <div class="article">
             <img src="${article.image}" alt="${article.title}" class="article-image">
-            <h2 class="article-title">${article.title}</h2>
-            <p class="article-content">${article.content}</p>
+            <br>
+            <textarea readonly class="article-content">${article.content}</textarea>
         </div>`;
     articleContainer.innerHTML += articleHTML; 
 }
