@@ -600,6 +600,7 @@ div.post-card:hover a.cover {
   background: #2c3e50; 
 background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  
 background: linear-gradient(to right, #3498db, #2c3e50); 
+margin-top: -2rem;
 }
 
 /* div.post-card:hover {
