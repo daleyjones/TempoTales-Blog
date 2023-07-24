@@ -1,5 +1,5 @@
 // Authorization token that must have been created previously.
-const token = 'BQDq8ZzaIl2mAW-WDffMii8fQQbWaXRS7GPNR4mWIFN7RaP9iOT_WlynUIk5QW5Yx5uVS-sLHZUzpZnRw15GLree_hm8WVL5K2_VK54OxVSKyUx-2nStkW7jkYHU4q7CT3Qyi7JriWx-h577hqdrzN4Db0ROBy_7n0T_wro7brcwHfpvHKvNatJJsMndYLwL8bfdSMMmK7JkgsvgthRAZzVhRwAokV_uXHxZj1vqOyqxzrrBNqFRgwQGF5Z2cZBSn4V3aw';
+const token = 'BQDzQOgQV4jJP3tqtESqtw1bEnM-D2e_ueyMNOynxUQ_E8VwCV-8S0VixO0xbFc9n0GpJyX_4nmCjURMyejJMFkscl9eQnFdMv-JO4YTWBLJKKNo0Uh70_xeHwJHWT8LxOyGNGODQ8v87pS29E5oEj_bqukbQL4NWyIh4_RJpU6bFcyrYb9ImZW_QFcAeX9QDrbadbd2ed0vcn4Jdw43SzPwS3_86KvO44DWV3K-T0lsttplN7cX4JESlBUfs9zzL9R37g';
 // Function to make API requests
 async function fetchWebApi(endpoint, method, body) {
   const res = await fetch(`https://api.spotify.com/${endpoint}`, {
@@ -308,57 +308,67 @@ document.addEventListener("DOMContentLoaded", async function () {
   displayEmbeddedPlaylist(createdPlaylist.id);
 });
 
+
+
+
+
 // Replace 'YOUR_OPENAI_API_KEY' with your actual OpenAI API key
-const apiKey = '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';
+// Function to handle user input and generate responses
+document.addEventListener("DOMContentLoaded", function () {
+  const chatbotMessages = document.getElementById("chatbot-messages");
+  const userInput = document.getElementById("user-input");
 
-// Function to send a message to the chatbot and receive a response
-async function sendMessageToChatbot(message) {
-  try {
-    const response = await fetch('/api/chatbot', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ message, apiKey }),
-    });
-
-    const data = await response.json();
-    displayChatbotMessage(data.reply);
-  } catch (error) {
-    console.error(error);
-    displayChatbotMessage("Oops! Something went wrong.");
+  // Function to add a new message to the chatbot
+  function addMessage(className, message) {
+    const templateSource = document.getElementById("message-template").innerHTML;
+    const template = Handlebars.compile(templateSource);
+    const context = { className, message };
+    const html = template(context);
+    chatbotMessages.innerHTML += html;
   }
-}
 
-// Function to display a message from the chatbot
-function displayChatbotMessage(message) {
-  const chatbotMessagesDiv = document.getElementById('chatbot-messages');
-  const messageDiv = document.createElement('div');
-  messageDiv.className = 'message';
-  messageDiv.textContent = message;
-  chatbotMessagesDiv.appendChild(messageDiv);
-  chatbotMessagesDiv.scrollTop = chatbotMessagesDiv.scrollHeight;
-}
+  // Function to handle user input and generate responses
+  function handleUserInput() {
+    const userMessage = userInput.value;
+    if (userMessage.trim() !== "") {
+      addMessage("user", userMessage);
 
-// Function to handle user input and send it to the chatbot
-document.getElementById('user-input').addEventListener('keydown', function (event) {
-  if (event.key === 'Enter') {
-    const userInput = event.target.value.trim();
-    if (userInput) {
-      displayChatbotMessage(`You: ${userInput}`);
-      event.target.value = '';
-      sendMessageToChatbot(userInput);
+      // Bot's responses based on user input
+      setTimeout(function () {
+        let botResponse;
+        switch (userMessage.toLowerCase()) {
+          case "what is your name?":
+            botResponse = "I'm just a demo chatbot!";
+            break;
+          case "how old are you?":
+            botResponse = "I don't have an age. I'm just a computer program.";
+            break;
+          case "what is the capital of france?":
+            botResponse = "The capital of France is Paris.";
+            break;
+          case "tell me a joke.":
+            botResponse = "Why don't scientists trust atoms? Because they make up everything!";
+            break;
+          // Add more cases for other questions and responses here
+          default:
+            botResponse = "Sorry, I'm not sure how to respond to that.";
+            break;
+        }
+
+        addMessage("bot", botResponse);
+      }, 500);
+
+      userInput.value = "";
     }
   }
+
+  // Listen for Enter key press to handle user input
+  userInput.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      handleUserInput();
+    }
+  });
 });
-
-
-
-
-
-
-
-
 
 
 

@@ -14,13 +14,11 @@
                 <div class="row mb-4 post">
                     <div class="col-md-12">
                         <div class="post-card">
-                            <div class="post-image">
-                                <img src="{{post.image_url}}" alt="{{post.title}}">
-                            </div>
+                          
                             <div class="post-content">
                                 <h2><a href="/post/{{post.id}}" class="post-title">{{post.title}}</a></h2>
                                 <p class="metadata">Published on {{format_date post.date_created}} by {{user.name}}</p>
-                                <p class="post-excerpt">{{post.excerpt}}</p>
+                                <p class="post.body">{{post.body}}</p>
                                 <span><a href="/post/{{post.id}}" class="cover">Click me to see post</a></span>
                             </div>
                         </div>
@@ -76,18 +74,21 @@
         <div id="article-container" class="article-container"></div>
     </div>
     <div id="hip-hop-articles"></div>
-<div id="chatbot-container">
-  <div id="chatbot-messages">
-    <!-- Messages from the chatbot will be appended here -->
-    <div class="message bot">Hello! How can I assist you?</div>
-    <div class="message user">Do You Have a question?</div>
-    <!-- Add more messages here -->
+  <div id="chatbot-container">
+    <div id="chatbot-messages">
+      <!-- Messages from the chatbot will be appended here -->
+      <div class="message bot">Hello! How can I assist you?</div>
+      <!-- Add more messages here -->
+    </div>
+    <input type="text" id="user-input" placeholder="Type your message..." />
   </div>
-  <input type="text" id="user-input" placeholder="Type your message..." />
-</div>
+
+  </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="/js/homepage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
 </body>
 </html>
