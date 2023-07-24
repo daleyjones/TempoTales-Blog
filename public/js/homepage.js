@@ -376,18 +376,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Replace YOUR_YOUTUBE_API_KEY with your actual YouTube API key
 const youtubeAPIKey = "YAIzaSyCY8ADsA7nL-sYx0-70daCqWOhHfJ4jfnY";
 let youtubePlayer;

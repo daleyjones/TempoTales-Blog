@@ -927,7 +927,47 @@ h1 {
 
 
 
+#chatbot-container {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
 
+#chatbot-messages {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.bot {
+  background-color: #f0f0f0;
+}
+
+.user {
+  background-color: #d3e6f9;
+  text-align: right;
+}
+
+#user-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-top: 1px solid #ccc;
+  outline: none;
+}
+
+#user-input::placeholder {
+  color: #ccc;
+}
 
 
 
