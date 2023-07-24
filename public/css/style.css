@@ -450,7 +450,7 @@ h2.welcome{
 .post-title {
   font-size: 45px;
   margin: 0;
-  color: #333;
+  color: #2756d8;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -1096,6 +1096,11 @@ footer.footer{
  
 }
 
+#postbody {
+  align-items: center;
+  color: #2756d8;
+
+}
 
 
 /* .footer {
