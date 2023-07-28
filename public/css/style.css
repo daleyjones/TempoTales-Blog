@@ -1142,6 +1142,16 @@ footer.footer{
 
 }
 
+/* CSS for larger screens */
+@media (min-width: 768px) {
+  /* Add styles for larger screens here */
+}
+
+/* CSS for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+  /* Add styles for smaller screens here */
+}
+
 
 /* .footer {
   background-color: #f0f0f0;
