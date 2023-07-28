@@ -1,5 +1,5 @@
 // Authorization token that must have been created previously.
-const token = 'BQDp73Z_6KCQKxO1ZpZJJLnza2xGpQpnSjST7_eUuuMQ5NYz9_7BVd6DWhzF9wmUQKcYQIvcEUGiupV6x8TQeT39DmeCCqt4TOWIOECkKHjt1THHA-cHMQ_5k3aN8FFwgkz6GjW7GTRkmmkAK2IwEXpkEBcpjfw6PFpv_q_w-Ef04GwqWEHFllF3nTXobfO2PrvPJCB0qk4TcQWMD0zORU4Lo3N-jMGoFthvShA1CrUFfi39fFvTfnNczgOnmrMPb7l6og';
+const token = 'BQCj9f8Rp2Tlvz8CqAx9HbdqTGLoMW_KThjxqYoXynlOASRX0FY0IxIzyY5WRwBuuVXo3Elgk1aHb8UI7Q64jmV6JSRGxiqahc3GDYMdEfq_affFKtbJZmgn-BD1Iun-DXV3ed4vuPPLRDs0MHGcuCAGw0yRnPuoZizHbBZnLHZZoNvk8WaE3I66cU35VtcZT5eeMCoAm6-H_0bSar_xisxp-Ns4k5m_aEIbxuWt1It1tJuBLG1PDMAR54tvAGoS5wMtIA';
 // Function to make API requests
 async function fetchWebApi(endpoint, method, body) {
   const res = await fetch(`https://api.spotify.com/${endpoint}`, {

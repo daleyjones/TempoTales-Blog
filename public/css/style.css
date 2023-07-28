@@ -1,5 +1,13 @@
+* {
+  /* box-sizing: border-box; */
+  /* background-image: url('./SL.123119.26540.04.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
 
 
+
+}
 
 /* login page */
 
@@ -8,41 +16,45 @@ header,
   border-bottom: 1px solid #ccc;
 }
 
-
-
-
-  h1.logo {
-    font-size: 50px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: -4px;
-  }
-
-  
-
-  body {
-    /* background: #36D1DC; 
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
-    background: linear-gradient(to right, #5B86E5, #36D1DC); */
-      background: #000046; 
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  
-    background: linear-gradient(to right, #1CB5E0, #000046); 
-  }
-  
-
-body.hp {
-  
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  /* background-image: url('./pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg'); */
-  background: #000046; 
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  
-    background: linear-gradient(to right, #1CB5E0, #000046); 
+body {
+  /* background: #36D1DC; 
+  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
+  background: linear-gradient(to right, #5B86E5, #36D1DC); */
+  /* background: #000046;
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  background: linear-gradient(to right, #1CB5E0, #000046); */
+  background-image: url('./abstract-gradient-neon-lights.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
 }
+
+
+body.hp {
+/* 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; */
+  /* background-image: url('./pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg'); */
+  /* background: #000046; */
+  /* background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  background: linear-gradient(to right, #1CB5E0, #000046); */
+  /* background-size: cover; */
+  /* background-position: center;
+  background-repeat: no-repeat;
+} */
+}
+
+h1.logo {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -4px;
+}
+
+
+
 
 .wrapper {
   display: flex;
@@ -53,23 +65,23 @@ body.hp {
 
 
 header.header {
-    z-index: 999;
-    top: -10px;
-    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5); 
-    padding-top: 15px;
-    background-color: #000000;
-    border: none;
+  z-index: 999;
+  top: -10px;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+  padding-top: 15px;
+  background-color: #000000;
+  border: none;
 }
 
 nav.nav {
- display: none;
+  display: none;
 }
 
 a.title {
   text-decoration: none;
 }
 
-div.container{
+div.container {
   margin-top: 100px;
 }
 
@@ -84,7 +96,7 @@ div.col-md-6 {
   border-radius: 20px;
 }
 
-div.col-md-6{
+div.col-md-6 {
   transform: scale(0.95);
   border-radius: 20px;
   box-shadow: 0px 0px 30px 1px rgb(45 27 168 / 31%);
@@ -146,11 +158,11 @@ form .form-input {
 
 a.profile {
   background-color: dimgray;
-    padding: 5px 16px;
-    border-radius: 5px;
-    color: #000000;
-    margin-bottom: -36px;
-    display: table;
+  padding: 5px 16px;
+  border-radius: 5px;
+  color: #000000;
+  margin-bottom: -36px;
+  display: table;
 
 
 
@@ -198,7 +210,7 @@ label.post-header {
 
 label.content {
   margin-right: 190px;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 input#post-title.input-form {
@@ -263,10 +275,10 @@ button.btn-primary:hover {
 
 /* profile post list */
 body#bg {
-  background: #F0F2F0; 
-  background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  
-  background: linear-gradient(to right, #000C40, #F0F2F0); 
-  
+  background: #F0F2F0;
+  background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);
+  background: linear-gradient(to right, #000C40, #F0F2F0);
+
 
 }
 
@@ -402,8 +414,8 @@ button {
 }
 
 
-h2.welcome{
-  animation: color-change 1s 1s ;
+h2.welcome {
+  animation: color-change 1s 1s;
 }
 
 
@@ -417,7 +429,7 @@ h2.welcome{
 .post-card {
   display: flex;
   text-align: center;
-  color:white;
+  color: white;
   margin: 15px;
   flex-wrap: wrap;
   align-items: center;
@@ -427,8 +439,9 @@ h2.welcome{
   background-color: #131313;
   box-shadow: 0 0px 10px rgb(240, 229, 229);
   border: 1px solid #ccc;
-  background-image: url('/public/css/SL.123119.26540.04.jpg'); 
+  background-image: url('/public/css/SL.123119.26540.04.jpg');
 }
+
 .post-image {
   flex: 0 0 30%;
   max-width: 30%;
@@ -491,12 +504,22 @@ h2.welcome{
   background: #f72c218f;
 
 }
+
 @keyframes color-change {
-  0% { color: rgb(22, 59, 225); }
-  50% { color: rgb(103, 140, 199); }
-  100% { color: rgb(80, 88, 94); }
+  0% {
+    color: rgb(22, 59, 225);
+  }
+
+  50% {
+    color: rgb(103, 140, 199);
+  }
+
+  100% {
+    color: rgb(80, 88, 94);
+  }
 
 }
+
 @keyframes progress-animation {
   0% {
     transform: scaleX(0);
@@ -511,6 +534,7 @@ h2.welcome{
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -525,7 +549,8 @@ h2.welcome{
   display: none;
   /* Set the desired width and height for the carousel container */
   width: 100%;
-  height: 400px; /* Adjust the height as per your requirement */
+  height: 400px;
+  /* Adjust the height as per your requirement */
 }
 
 .carousel-item.active {
@@ -540,7 +565,7 @@ div.post-card {
   background: black;
   position: relative;
   overflow: hidden;
-  transition: .3s cubic-bezier(.6,.4,0,1),transform .15s
+  transition: .3s cubic-bezier(.6, .4, 0, 1), transform .15s
 }
 
 .carousel-item .post-card {
@@ -564,15 +589,15 @@ div.post-card a.cover {
   inset: 0;
   width: 100%;
   height: 100%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  color:#eeeeee;
-  border-radius: 5px ;
+  color: #eeeeee;
+  border-radius: 5px;
   font-weight: bold;
   font-size: 100px;
   top: 100%;
-  transition: all .3s cubic-bezier(.6,.4,0,1);
+  transition: all .3s cubic-bezier(.6, .4, 0, 1);
   text-decoration: none;
   animation: color 1s 1s;
 }
@@ -586,21 +611,29 @@ div.article {
 }
 
 @keyframes color {
-  0% { color: rgb(22, 59, 225); }
-  50% { color: rgb(103, 140, 199); }
-  100% { color: rgb(80, 88, 94); }
+  0% {
+    color: rgb(22, 59, 225);
+  }
+
+  50% {
+    color: rgb(103, 140, 199);
+  }
+
+  100% {
+    color: rgb(80, 88, 94);
+  }
 
 }
 
 
 div.post-card:hover a.cover {
-  top:0;
+  top: 0;
   font-size: 2rem;
   /* background: darkblue; */
-  background: #2c3e50; 
-background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  
-background: linear-gradient(to right, #3498db, #2c3e50); 
-margin-top: -2rem;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to right, #3498db, #2c3e50);
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  margin-top: -2rem;
 }
 
 /* div.post-card:hover {
@@ -608,7 +641,7 @@ margin-top: -2rem;
   
 } */
 
-div.post-card > .post-content {
+div.post-card>.post-content {
   display: block;
   font-size: 1.4rem;
   letter-spacing: -.0.35rem;
@@ -633,18 +666,19 @@ div.post-card > .post-content {
 
 
 a.carousel-control-prev {
-  width:139px;
+  width: 139px;
   background: none;
 }
 
 a.carousel-control-next {
-  width:139px;
+  width: 139px;
   background: none;
 }
 
 span.carousel-control-prev-icon {
   padding: 18px;
 }
+
 span.carousel-control-next-icon {
   padding: 18px;
 }
@@ -665,7 +699,7 @@ a.carousel-control-next:hover {
 
 body.post {
   background: url(./record\ bg.jpeg);
-  background-size:cover ;
+  background-size: cover;
 }
 
 
@@ -709,14 +743,14 @@ div.row.mt-5 {
 }
 
 div.form-groups {
-padding: 2px;
-width: 27rem;
+  padding: 2px;
+  width: 27rem;
 }
 
 div.row.mt-5 .div.row.mt-7 {
-background-color: #ffffff;
-border-radius: 8px 8px 21px 21px;
-padding: 8px;
+  background-color: #ffffff;
+  border-radius: 8px 8px 21px 21px;
+  padding: 8px;
 }
 
 button.post-btn {
@@ -742,7 +776,7 @@ div.row.mt-5 textarea {
   border: 0;
   border-radius: 2px;
   padding: 12px 12px 10px 12px;
-  outline:none;
+  outline: none;
   width: 63.3rem;
   margin-left: -0.6rem;
   height: 12rem;
@@ -750,7 +784,7 @@ div.row.mt-5 textarea {
 }
 
 
-h2.hpost{
+h2.hpost {
   color: #000000;
   display: flex;
   margin: 10px;
@@ -771,7 +805,8 @@ p.created {
 /* Set the desired width and height for the carousel container */
 #carouselNew {
   width: 100%;
-  height: 400px; /* Adjust the height as per your requirement */
+  height: 400px;
+  /* Adjust the height as per your requirement */
 }
 
 
@@ -787,31 +822,31 @@ h2.article-title {
   text-align: center;
   margin: 2em;
   color: white;
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
 }
 
 hr.hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0,0,0,.1);
+  border-top: 1px solid rgba(0, 0, 0, .1);
   width: 28rem;
 }
 
 textarea.article-content {
- border-radius: 10px;
- transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-padding:10px;
-width: 35rem;
-height: 24rem;
-resize: none;
-background: linear-gradient(0deg, #000, #272727);
-    color: #508dd9;
-    box-shadow: #111 0 1px 3px 2px;
-    border: none;
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 10px;
+  width: 35rem;
+  height: 24rem;
+  resize: none;
+  background: linear-gradient(0deg, #000, #272727);
+  color: #508dd9;
+  box-shadow: #111 0 1px 3px 2px;
+  border: none;
 }
 
 hr.line {
@@ -838,7 +873,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 60px auto 0; /* Add margin-top of 30px, remove the auto from top and add 0 to bottom */
+  margin: 60px auto 0;
+  /* Add margin-top of 30px, remove the auto from top and add 0 to bottom */
 }
 
 .top-tracks-container,
@@ -990,7 +1026,8 @@ h1 {
 
 /* Add a border and adjust image size */
 .article-image {
-  max-width: 500px; /* Adjust the width to your desired size */
+  max-width: 500px;
+  /* Adjust the width to your desired size */
   border: 5px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -1002,8 +1039,8 @@ h1 {
 }
 
 
- /* Style for the chatbot container */
- #chatbot-container {
+/* Style for the chatbot container */
+#chatbot-container {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -1018,7 +1055,8 @@ h1 {
 
 /* Style for the chatbot messages */
 #chatbot-messages {
-  max-height: 300px; /* Adjust the height as needed */
+  max-height: 300px;
+  /* Adjust the height as needed */
   overflow-y: auto;
 }
 
@@ -1046,6 +1084,7 @@ h1 {
   margin-top: 10px;
   font-size: 16px;
 }
+
 .songsNow {
   display: flex;
   max-width: 1200px;
@@ -1122,18 +1161,19 @@ h1 {
 
 
 
-footer.footer{
- 
-  color:white;
+footer.footer {
+
+  color: white;
   justify-content: center;
   /* position: absolute; */
   bottom: 0;
   width: 100%;
-  height: 60px; /* Set the height of your footer */
+  height: 60px;
+  /* Set the height of your footer */
   display: flex;
   align-items: center;
   justify-content: center;
- 
+
 }
 
 #postbody {
@@ -1142,24 +1182,115 @@ footer.footer{
 
 }
 
-/* CSS for larger screens */
-@media (min-width: 768px) {
-  /* Add styles for larger screens here */
+    .hr {
+      border: 1px solid black;
+    }
+    .top5, .recom, .listen, .pod, .articles {
+      text-align: center;
+    }
+
+  /* Base styles for all screen sizes */
+/* Base styles for all screen sizes */
+body {
+  font-size: 16px; /* Default font size for desktop */
 }
 
-/* CSS for smaller screens (e.g., mobile devices) */
+.title {
+  font-size: 24px; /* Default font size for the title */
+}
+
+#playlist-container, #youtube-player-container {
+  min-height: 360px; /* Default height for the YouTube player container */
+}
+
+.tracks-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommended-tracks {
+  margin-top: 20px;
+}
+
+.songsNow {
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  /* Adjust width for mobile */
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Mobile-specific styles */
 @media (max-width: 767px) {
-  /* Add styles for smaller screens here */
+  body {
+    font-size: 14px; /* Reduce font size for mobile devices */
+  }
+
+  .title {
+    font-size: 18px; /* Adjust title font size for mobile */
+  }
+
+  #playlist-container, #youtube-player-container {
+    min-height: 120px; /* Adjust height for mobile */
+  }
+
+  /* Reset width and margin for articles on mobile */
+  .article {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .article {
+    margin-top: 31px;
+    display: flex; /* Use flexbox instead of grid */
+    flex-wrap: wrap; /* Wrap items to a new line if necessary */
+    justify-content: space-between; /* Distribute items evenly along the row */
+    margin-bottom: 20px;
+  }
+  /* You can adjust the width and spacing of the articles here */
+  .article-title {
+    flex: 1 1 100%; /* Expand to full width */
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .article-content {
+    flex: 1 1 100%; /* Expand to full width */
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .article-image {
+    flex: 1 1 100%; /* Expand to full width */
+    width: 100%;
+    height: auto;
+    max-width: 400%;
+    /* display: block; */
+  }
+  textarea.article-content {
+    width: 250px;
+  }
 }
 
 
-/* .footer {
-  background-color: #f0f0f0;
-  padding: 10px;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-} */
+@media screen and (max-width: 767px) {
+  div.text-center {
+   /* width: 0px; */
+  }
+}
+
+
 
 
