@@ -1,5 +1,5 @@
 // Authorization token that must have been created previously.
-const token = 'BQDzQOgQV4jJP3tqtESqtw1bEnM-D2e_ueyMNOynxUQ_E8VwCV-8S0VixO0xbFc9n0GpJyX_4nmCjURMyejJMFkscl9eQnFdMv-JO4YTWBLJKKNo0Uh70_xeHwJHWT8LxOyGNGODQ8v87pS29E5oEj_bqukbQL4NWyIh4_RJpU6bFcyrYb9ImZW_QFcAeX9QDrbadbd2ed0vcn4Jdw43SzPwS3_86KvO44DWV3K-T0lsttplN7cX4JESlBUfs9zzL9R37g';
+const token = 'BQDp73Z_6KCQKxO1ZpZJJLnza2xGpQpnSjST7_eUuuMQ5NYz9_7BVd6DWhzF9wmUQKcYQIvcEUGiupV6x8TQeT39DmeCCqt4TOWIOECkKHjt1THHA-cHMQ_5k3aN8FFwgkz6GjW7GTRkmmkAK2IwEXpkEBcpjfw6PFpv_q_w-Ef04GwqWEHFllF3nTXobfO2PrvPJCB0qk4TcQWMD0zORU4Lo3N-jMGoFthvShA1CrUFfi39fFvTfnNczgOnmrMPb7l6og';
 // Function to make API requests
 async function fetchWebApi(endpoint, method, body) {
   const res = await fetch(`https://api.spotify.com/${endpoint}`, {
@@ -369,18 +369,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

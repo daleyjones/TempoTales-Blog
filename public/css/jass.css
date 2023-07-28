@@ -1703,3 +1703,12 @@ form [type='radio'] {
     align-content: center;
   }
 }
+
+@media screen and (min-width: 768px) {
+ 
+}
+
+@media screen and (max-width: 767px) {
+
+ 
+}

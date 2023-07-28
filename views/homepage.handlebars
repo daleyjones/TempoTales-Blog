@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Music Updates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -74,16 +75,69 @@
         <div id="article-container" class="article-container"></div>
     </div>
     <div id="hip-hop-articles"></div>
-  <div id="chatbot-container">
-    <div id="chatbot-messages">
-      <!-- Messages from the chatbot will be appended here -->
-      <div class="message bot">Hello! How can I assist you?</div>
-      <!-- Add more messages here -->
+ <div id="chatbot-container">
+        <div id="chatbot-messages">
+            <!-- Messages from the chatbot will be appended here -->
+            <div class="message bot">Hello! How can I assist you?</div>
+            <!-- Add more messages here -->
+        </div>
+        <input type="text" id="user-input" placeholder="Type your message..." />
     </div>
-    <input type="text" id="user-input" placeholder="Type your message..." />
-  </div>
 
-  </script>
+    <script>
+        // Function to add a new message to the chatbot
+        function addMessage(className, message) {
+            const chatbotMessages = document.getElementById("chatbot-messages");
+            const newMessage = document.createElement("div");
+            newMessage.className = "message " + className;
+            newMessage.textContent = message;
+            chatbotMessages.appendChild(newMessage);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }
+
+        // Function to handle user input and generate responses
+        function handleUserInput() {
+            const userInput = document.getElementById("user-input");
+            const userMessage = userInput.value;
+            if (userMessage.trim() !== "") {
+                addMessage("user", userMessage);
+
+                // Bot's responses based on user input
+                setTimeout(function () {
+                    let botResponse;
+                 switch (userMessage.toLowerCase()) {
+    case "what is your name?":
+        botResponse = "I'm just a stupid chatbot!";
+        break;
+    case "how old are you?":
+        botResponse = "I don't have an age. I'm just a computer program.";
+        break;
+    case "tell me a joke":
+        botResponse = "Why don't scientists trust atoms? Because they make up everything!";
+        break;
+    // Add more cases for other questions and responses here
+    default:
+        botResponse = "Sorry, I'm not sure how to respond to that.";
+        break;
+}
+
+
+                    addMessage("bot", botResponse);
+                }, 500);
+
+                userInput.value = "";
+            }
+        }
+
+        // Listen for Enter key press to handle user input
+        document.getElementById("user-input").addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                handleUserInput();
+            }
+        });
+    </script>
+
+    <!-- Your existing script tags -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="/js/homepage.js"></script>
