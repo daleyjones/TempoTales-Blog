@@ -2,9 +2,9 @@
 
 
 # Description
-Welcome to tempoTunes, your go-to destination for all things music. Our blog is dedicated to bringing you the latest insights, news, and updates from the ever-evolving world of music technology. Whether you're a music producer, musician, or just a music lover curious about the tech behind the melodies, tempoTunes has got you covered. Our team of music enthusiasts and tech experts curates engaging and informative articles to keep you in tune with the cutting-edge innovations in the music industry.
+Welcome to tempoTells, your go-to destination for all things music. Our blog is dedicated to bringing you the latest insights, news, and updates from the ever-evolving world of music technology. Whether you're a music producer, musician, or just a music lover curious about the tech behind the melodies, tempoTunes has got you covered. Our team of music enthusiasts and tech experts curates engaging and informative articles to keep you in tune with the cutting-edge innovations in the music industry.
 
-This repository contains the source code for tempoTunes, a real-world full-stack application built to deliver a seamless user experience. We have utilized Node.js and Express.js to create a powerful RESTful API, while Handlebars.js provides a dynamic and interactive user interface. Our database is powered by MySQL and managed with the Sequelize ORM, ensuring efficient and reliable data handling.
+This repository contains the source code for tempoTells, a real-world full-stack application built to deliver a seamless user experience. We have utilized Node.js and Express.js to create a powerful RESTful API, while Handlebars.js provides a dynamic and interactive user interface. Our database is powered by MySQL and managed with the Sequelize ORM, ensuring efficient and reliable data handling.
 
 # Technologies Used
 Node.js
@@ -38,8 +38,10 @@ Access the application in your web browser at http://localhost:3000.
 ## Deployment
 Visit Link to Deployed Application https://github.com/daleyjones/TempoTells-Blog  experience the harmony of music and technology.
 
+
+
 # Contributing
-At tempoTunes, we believe in the power of community collaboration. If you have any ideas, bug fixes, or feature suggestions, we'd love to hear from you. Feel free to open a GitHub issue or submit a pull request to contribute to the growth of our music tech blog.
+At tempoTells, we believe in the power of community collaboration. If you have any ideas, bug fixes, or feature suggestions, we'd love to hear from you. Feel free to open a GitHub issue or submit a pull request to contribute to the growth of our music tech blog.
 
 # License
 The tempoTunes project is licensed under the MIT License.
