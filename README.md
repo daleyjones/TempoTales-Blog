@@ -1,4 +1,4 @@
-# TempoTunes - Your Ultimate Music Tech Blog
+# TempoTells - Your Ultimate Music Tech Blog
 
 
 # Description
