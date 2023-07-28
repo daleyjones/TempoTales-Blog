@@ -26,7 +26,7 @@ Secure handling of API keys and sensitive information using environment variable
 
 
 # Getting Started
-To explore the world of music tech on tempoTunes, follow these steps:
+To explore the world of music tech on tempoTells, follow these steps:
 
 Clone this repository to your local machine.
 Install the required dependencies using npm or yarn.
@@ -44,5 +44,5 @@ Visit Link to Deployed Application https://github.com/daleyjones/TempoTells-Blog
 At tempoTells, we believe in the power of community collaboration. If you have any ideas, bug fixes, or feature suggestions, we'd love to hear from you. Feel free to open a GitHub issue or submit a pull request to contribute to the growth of our music tech blog.
 
 # License
-The tempoTunes project is licensed under the MIT License.
+The tempoTells project is licensed under the MIT License.
 
