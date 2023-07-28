@@ -20,8 +20,9 @@ Interactive and responsive UI for an enjoyable reading experience.
 Polished and professional design that enhances user engagement.
 Secure handling of API keys and sensitive information using environment variables.
 
-# Screenshots
-<!-- Add some screenshots of your application to showcase its UI -->
+# Screenshot
+![Screenshot of My Project](./public/images/Screenshot%20(106).png)
+
 
 
 # Getting Started
@@ -33,8 +34,9 @@ Set up your MySQL database and update the configuration in the app.
 Set up environment variables to secure sensitive information.
 Run the application using the command npm start.
 Access the application in your web browser at http://localhost:3000.
-Deployment
-Visit Link to Deployed Application <!-- Replace link_to_deployed_app with the actual link to your deployed application --> to experience the harmony of music and technology.
+
+## Deployment
+Visit Link to Deployed Application https://github.com/daleyjones/TempoTells-Blog  experience the harmony of music and technology.
 
 # Contributing
 At tempoTunes, we believe in the power of community collaboration. If you have any ideas, bug fixes, or feature suggestions, we'd love to hear from you. Feel free to open a GitHub issue or submit a pull request to contribute to the growth of our music tech blog.
@@ -42,5 +44,3 @@ At tempoTunes, we believe in the power of community collaboration. If you have a
 # License
 The tempoTunes project is licensed under the MIT License.
 
-# Contact
-For any inquiries or feedback, reach out to us at https://github.com/daleyjones/TempoTales-Blog Follow us on social media to stay tuned to the latest updates:
